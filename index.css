@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'OptimusPrinceps', sans-serif;
+    color: white;
+    text-shadow: 
+    0 0 10px rgb(255, 255, 255),
+    0 0 13px rgb(0, 0, 0),
+    0 0 15px rgb(0, 0, 0);
+}
+
+a, a:hover, a:visited, a:active
+{
+	color:white !important;
+	text-decoration:none;
+    transition: 1.5 ease;
+}
+
+.carousel{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar{
+    position: absolute !important;
+    height: 10rem;
+    font-size: 1.5rem;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+#navUl{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#navUl li{
+    margin: 2rem;
+}
+
+.modal-backdrop{
+    z-index: 4 !important;
+}
+
+.modal-content{
+    background-color: black !important;
+    color: white;
+    border: 1px solid white !important;
+}
+
+.modal-content .btn{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+#btnNav{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+label{
+    color: white !important;
+    font-size: 1rem;
+}
+
+#title{
+    position: absolute;
+    margin: auto;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#intro p{
+    text-align: center;
+    padding: 5rem;
+}
+
+#intro img{
+    width: 80%;
+}
+
+#imgFond{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    filter: brightness(30%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.carousel2 img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.test{
+    height: auto !important;
+    background-color: transparent !important;
+}
+
+.card{
+    background-color: transparent !important;
+}
+
+footer {
+    width: 100%;
+    height: 15rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("assets/images/RingedKnight.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .socialMedia{
+    list-style-type: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socialMedia li{
+    margin: 2rem;
+  }

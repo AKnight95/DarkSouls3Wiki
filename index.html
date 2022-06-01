@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls 3 Wiki</title>
+    <link rel="stylesheet" href="/MethodeAgile/index.css">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/optimus-princeps" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/optimus-princeps" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3c49c887f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div id="imgFond">
+        <img src="assets/images/theAncientGods.jpeg" alt="">
+    </div>
+    <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+
+    <nav class="navbar navbar-expand-lg">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCenteredExample"
+          >
+            <!-- Left links -->
+            <ul id="navUl" class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wiki</a>
+              </li>
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Equipement</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"
+                  >Verouiller</a
+                >
+              </li>
+              <li>
+                <!-- Button trigger modal -->
+                <button type="button" id="btnNav" class="btn" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
+                    Connexion/Inscription
+                </button>
+                
+                <!-- Modal -->
+                <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-mdb-backdrop="static"
+                    data-mdb-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- Pills navs -->
+                            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
+                                    aria-controls="pills-login" aria-selected="true">Login</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                                    aria-controls="pills-register" aria-selected="false">Register</a>
+                                </li>
+                            </ul>
+                        <!-- Pills navs -->
+                        
+                        <!-- Pills content -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                            <form>
+                                <div class="text-center mb-3">
+                                <p>Sign in with:</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                        
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                        
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                        
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                                </div>
+                        
+                                <p class="text-center">or:</p>
+                        
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                <input type="email" id="loginName" class="form-control" />
+                                <label class="form-label" for="loginName">Email or username</label>
+                                </div>
+                        
+                                <!-- Password input -->
+                                <div class="form-outline mb-4">
+                                <input type="password" id="loginPassword" class="form-control" />
+                                <label class="form-label" for="loginPassword">Password</label>
+                                </div>
+                        
+                                <!-- 2 column grid layout -->
+                                <div class="row mb-4">
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check mb-3 mb-md-0">
+                                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                    <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Simple link -->
+                                    <a href="#!">Forgot password?</a>
+                                </div>
+                                </div>
+                        
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-block mb-4" data-mdb-dismiss="modal">Sign in</button>
+                        
+                                <!-- Register buttons -->
+                                <div class="text-center">
+                                <p>Not a member? <a href="#!">Register</a></p>
+                                </div>
+                            </form>
+                            </div>
+                            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                            <form>
+                                <div class="text-center mb-3">
+                                <p>Sign up with:</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                        
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                        
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                        
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                                </div>
+                        
+                                <p class="text-center">or:</p>
+                        
+                                <!-- Name input -->
+                                <div class="form-outline mb-4">
+                                <input type="text" id="registerName" class="form-control" />
+                                <label class="form-label" for="registerName">Name</label>
+                                </div>
+                        
+                                <!-- Username input -->
+                                <div class="form-outline mb-4">
+                                <input type="text" id="registerUsername" class="form-control" />
+                                <label class="form-label" for="registerUsername">Username</label>
+                                </div>
+                        
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                <input type="email" id="registerEmail" class="form-control" />
+                                <label class="form-label" for="registerEmail">Email</label>
+                                </div>
+                        
+                                <!-- Password input -->
+                                <div class="form-outline mb-4">
+                                <input type="password" id="registerPassword" class="form-control" />
+                                <label class="form-label" for="registerPassword">Password</label>
+                                </div>
+                        
+                                <!-- Repeat Password input -->
+                                <div class="form-outline mb-4">
+                                <input type="password" id="registerRepeatPassword" class="form-control" />
+                                <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                </div>
+                        
+                                <!-- Checkbox -->
+                                <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                    aria-describedby="registerCheckHelpText" />
+                                <label class="form-check-label" for="registerCheck">
+                                    I have read and agree to the terms
+                                </label>
+                                </div>
+                        
+                                <!-- Submit button -->
+                                <button type="submit" class="btn  btn-block mb-3" data-mdb-dismiss="modal">Sign in</button>
+                            </form>
+                            </div>
+                        </div>
+                        <!-- Pills content -->
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn" data-mdb-dismiss="modal">Fermer</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+
+      <div id="title">
+        <img src="assets/images/DarkSouls3TitleWhite.png" alt="">
+      </div>
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+  
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <img src="assets/images/Artorias.jpg" class="d-block w-100" alt="Sunset Over the City"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="assets/images/BorealOutriderKnight.jpg" class="d-block w-100" alt="Canyon at Nigh"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+  
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="assets/images/SoulOfCinders3.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Inner -->
+  
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel wrapper -->
+
+  <div id="intro">
+      <h1>Dark Souls III Wiki</h1>
+      <img src="assets/images/SoulOfCinders3.jpg" alt="">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dignissimos minus amet, perferendis libero reprehenderit odit aut aperiam laboriosam labore voluptatem sed pariatur dolor ducimus voluptatibus ipsa ad, porro, error illo repellendus eveniet. Commodi quam, sint accusamus facilis inventore laboriosam recusandae labore fugiat dolores minima soluta placeat eum natus beatae!</p>
+  </div>
+
+  <div class="card">
+
+    <h2>Commentaires</h2>
+
+    <div class="card-body py-5">
+
+      <!-- Carousel wrapper -->
+      <div id="carouselExampleIndicators" class="carousel slide carousel-dark test" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators mb-0">
+          <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1"
+            aria-label="Slide 1"></button>
+          <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2"
+            aria-label="Slide 1"></button>
+        </div>
+
+        <!-- Inner -->
+        <div class="carousel-inner pt-2 pb-5">
+          <!-- Single item -->
+          <div class="carousel-item carousel2 active">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 col-lg-9 col-xl-8">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="assets/images/Artorias6.jpg"
+                      class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="90"
+                      height="90">
+                  </div>
+                  <div class="flex-grow-1 ms-4 ps-3">
+                    <figure>
+                      <blockquote class="blockquote mb-4">
+                        <p>
+                          <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                          <span class="font-italic">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Pariatur sint nesciunt ad itaque aperiam expedita officiis incidunt
+                            minus facere, molestias quisquam impedit inventore.</span>
+                        </p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Miranda Smith in <cite title="Source Title">The Guardian</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item carousel2">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 col-lg-9 col-xl-8">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="assets/images/Artorias6.jpg"
+                      class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="90"
+                      height="90">
+                  </div>
+                  <div class="flex-grow-1 ms-4 ps-3">
+                    <figure>
+                      <blockquote class="blockquote mb-4">
+                        <p>
+                          <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                          <span class="font-italic">Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                            quae ab illo inventore veritatis.</span>
+                        </p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Annie Hall <cite title="Source Title">New York Times</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item carousel2">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8 col-lg-9 col-xl-8">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="assets/images/Artorias6.jpg"
+                      class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="90"
+                      height="90">
+                  </div>
+                  <div class="flex-grow-1 ms-4 ps-3">
+                    <figure>
+                      <blockquote class="blockquote mb-4">
+                        <p>
+                          <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                          <span class="font-italic">At vero eos et accusamus et iusto odio dignissimos
+                            qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                            et quas molestias excepturi sint amet dolore.</span>
+                        </p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Jason More in <cite title="Source Title">Smash Magazine</cite>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators"
+          data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Carousel wrapper -->
+
+    </div>
+  </div>
+  
+
+
+  <footer>
+    <ul class="socialMedia">
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+
+  </footer>
+
+  <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
+    ></script>
+</body>
+</html>
